@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart URL Redirector Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Smart URL Redirector Settings</h3>
+    <label for="ticketUrlTemplate">Ticket URL Template:</label>
+    <input type="text" id="ticketUrlTemplate" placeholder="https://support.example.com/tickets/{ticket}">
+
+    <label for="keyword">Keyword:</label>
+    <input type="text" id="keyword" placeholder="keyword">
+
+    <label for="keywordUrl">Keyword URL:</label>
+    <input type="text" id="keywordUrl" placeholder="https://example.com/fixed-url">
+
+    <button id="save">Save</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
